@@ -7,12 +7,24 @@ body {
     font-family: -apple-system, Helvetica, sans-serif;
     line-height: 1.5;
     color: #666;
-    background-color: #ccc;
-    height: 2000px;
+    /*background-color: #ccc;*/
+    /*height: 2000px;*/
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+img a {
+    -webkit-touch-callout: none;
 }
 
 img {
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 a {
@@ -179,9 +191,10 @@ ul {
 /*导航栏模块*/
 nav {
     padding-top: 5px;
+    overflow: hidden;
 }
 
-nav a{
+nav a {
     float: left;
     width: 20%;
     text-align: center;
@@ -195,8 +208,31 @@ nav a img {
 
 nav a span {
     display: block;
+    font-size: 12px;
 }
 
+/*新闻模块*/
+.news {
+    margin-top: 20px;
+}
+
+.news a {
+    float: left;
+    box-sizing: border-box;
+}
+
+.news a:nth-child(1) {
+    width: 50%;
+}
+
+.news a:nth-child(n+2) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+
+.news img {
+    width: 100%;
+}
 
 
 
