@@ -8,6 +8,16 @@ body {
     line-height: 1.5;
     color: #666;
     background-color: #ccc;
+    height: 2000px;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
 }
 
 /*1号盒子*/
@@ -58,24 +68,27 @@ ul {
 }
 
 /*搜索模块*/
-.search-wrap {
-    position: relative;
+.search_wrap {
+    position: fixed;
     overflow: hidden;
+    width: 100%;
     height: 44px;
+    min-width: 320px;
+    max-width: 640px;
 }
 
 .search_btn {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: pink;
     width: 40px;
     height: 44px;
 }
 
 .search_btn::before {
     content: '';
-    display: inline-block;
+    display: block;
+    margin: 14px 0 0 15px;
     width: 20px;
     height: 18px;
     background: url("../images/nav_icon.png") no-repeat;
@@ -86,32 +99,103 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: pink;
     width: 40px;
     height: 44px;
+    color: #fff;
+    line-height: 44px;
 }
 
 .search {
+    position: relative;
     height: 30px;
     background-color: #ffffff;
     border-radius: 15px;
     margin: 7px 50px 0;
 }
 
+.jd_icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 15px;
+    background: url("../images/jd_icon.png") no-repeat;
+    background-size: 20px 15px;
+}
 
+.jd_icon::after {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
 
+/*二倍精灵图*/
+.loupe {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    background: url("../images/jd-sprites.png") no-repeat -83px 0;
+    background-size: 200px 200px;
+}
 
+/*主体内容*/
+/*焦点图*/
+.slide img {
+    width: 100%;
+}
 
+/*品牌日*/
+.brand {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
 
+.brand div:nth-child(1) {
+    float: left;
+    width: 43.68%;
+}
 
+.brand div:nth-child(2) {
+    float: left;
+    width: 31.34%;
+}
 
+.brand div:nth-child(3) {
+    float: left;
+    width: 24.98%;
+}
 
+.brand img {
+    width: 100%;
+}
 
+/*导航栏模块*/
+nav {
+    padding-top: 5px;
+}
 
+nav a{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
 
+nav a img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+}
 
-
-
+nav a span {
+    display: block;
+}
 
 
 
