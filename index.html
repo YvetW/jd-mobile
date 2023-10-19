@@ -7,7 +7,13 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <title>Document</title>
+    <!--引入swiper css文件-->
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <!--引入swiper js文件-->
+    <script src="js/swiper.min.js"></script>
+    <!--引入index js文件-->
+    <script src="js/index.js"></script>
+    <title>京东</title>
 </head>
 <body>
 <!--打开app start-->
@@ -38,7 +44,18 @@
 <div class="main_content">
     <!--滑动图-->
     <div class="slide">
-        <img alt="" src="upload/slide.jpeg">
+<!--        <img alt="" src="upload/slide.jpeg">-->
+        <!-- Swiper 注意不要更改里面的结构或类名 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img alt="" src="upload/slide.jpeg"></div>
+                <div class="swiper-slide"><img alt="" src="upload/slide1.jpg"></div>
+                <div class="swiper-slide"><img alt="" src="upload/slide2.jpg"></div>
+                <div class="swiper-slide"><img alt="" src="upload/slide3.jpeg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
     <!--品牌日模块-->
     <div class="brand">
